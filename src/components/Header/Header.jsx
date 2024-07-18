@@ -3,6 +3,7 @@ import lotusLogo from "./../../assets/icons/logo-lotus.png";
 import exitIcon from "./../../assets/icons/exit.svg";
 import hamburgerMenuIcon from "./../../assets/icons/hamburger-menu.svg";
 import { NavLink } from "react-router-dom";
+import DarkMode from "../DarkMode/DarkMode";
 
 const Header = () => {
   const handleNavLinkClick = () => {
@@ -42,6 +43,7 @@ const Header = () => {
                 <button className="nav__link--cta">Start Session</button>
               </NavLink>
             </div>
+            <DarkMode />
           </div>
         </div>
       </nav>

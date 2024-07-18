@@ -9,4 +9,14 @@
   list-style: none;
   box-sizing: border-box;
   line-height: 1.5;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  background-color: var(--body_background);
+  color: var(--body_color);
+}
+
+a {
+  color: var(--link_color);
 }
