@@ -17,9 +17,6 @@ const Header = () => {
           src={lotusLogo}
           alt="vector icon of a lotus flower"
         />
-        <span>
-          yog<span className="logo__title--coral">ai</span>nstruct
-        </span>
       </NavLink>
       <nav>
         <input type="checkbox" id="sidebar-active" />
