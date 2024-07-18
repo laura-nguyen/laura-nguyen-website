@@ -1,7 +1,5 @@
 import "./Header.scss";
 import lotusLogo from "./../../assets/icons/logo-lotus.png";
-import exitIcon from "./../../assets/icons/exit.svg";
-import hamburgerMenuIcon from "./../../assets/icons/hamburger-menu.svg";
 import { NavLink } from "react-router-dom";
 import DarkMode from "../DarkMode/DarkMode";
 
@@ -22,24 +20,40 @@ const Header = () => {
       <nav>
         <input type="checkbox" id="sidebar-active" />
         <label htmlFor="sidebar-active" className="open-sidebar-button">
-          <img src={hamburgerMenuIcon} alt="hamburger menu icon" />
+          <svg
+            className="icon icon--hamburger"
+            xmlns="http://www.w3.org/2000/svg"
+            height="32"
+            viewBox="0 -960 960 960"
+            width="32"
+          >
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg>
         </label>
         <label id="overlay" htmlFor="sidebar-active"></label>
         <div className="links-container">
           <label htmlFor="sidebar-active" className="close-sidebar-button">
-            <img src={exitIcon} alt="exit icon" />
+            <svg
+              className="icon icon--exit"
+              xmlns="http://www.w3.org/2000/svg"
+              height="32"
+              viewBox="0 -960 960 960"
+              width="32"
+            >
+              <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
           </label>
 
           <div className="nav__links">
             <NavLink
-              to="/poses"
+              to="/"
               className="nav__link--non-button"
               onClick={handleNavLinkClick}
             >
               Learn Yoga
             </NavLink>
             <div className="nav__link-wrapper--cta">
-              <NavLink to="/instructions">
+              <NavLink to="/">
                 <button className="nav__link--cta">Start Session</button>
               </NavLink>
             </div>
