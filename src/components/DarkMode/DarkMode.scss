@@ -1,6 +1,16 @@
+@import "./../../styles/partials/mixins.scss";
+@import "./../../styles/partials/typography.scss";
+@import "./../../styles/partials/variables.scss";
+
 .dark_mode {
-  margin-top: -20px;
-  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include tablet {
+    // margin-top: -33px;
+    // margin-left: 10px;
+  }
 }
 
 .dark_mode_label {

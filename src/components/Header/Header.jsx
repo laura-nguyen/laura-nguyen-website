@@ -45,18 +45,41 @@ const Header = () => {
           </label>
 
           <div className="nav__links">
-            <NavLink
-              to="/"
-              className="nav__link--non-button"
-              onClick={handleNavLinkClick}
-            >
-              Learn Yoga
-            </NavLink>
-            <div className="nav__link-wrapper--cta">
+            <div className="nav__links-main">
+              <NavLink
+                to="/"
+                className="nav__link--non-button"
+                onClick={handleNavLinkClick}
+              >
+                SKILLS
+              </NavLink>
+              <NavLink
+                to="/"
+                className="nav__link--non-button"
+                onClick={handleNavLinkClick}
+              >
+                PROJECTS
+              </NavLink>
+              <NavLink
+                to="/"
+                className="nav__link--non-button"
+                onClick={handleNavLinkClick}
+              >
+                TOOLBOX
+              </NavLink>
+              <NavLink
+                to="/"
+                className="nav__link--non-button"
+                onClick={handleNavLinkClick}
+              >
+                ABOUT ME
+              </NavLink>
+            </div>
+            {/* <div className="nav__link-wrapper--cta">
               <NavLink to="/">
                 <button className="nav__link--cta">Start Session</button>
               </NavLink>
-            </div>
+            </div> */}
             <DarkMode />
           </div>
         </div>

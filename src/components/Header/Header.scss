@@ -16,7 +16,7 @@
     padding: 0 3rem;
   }
   @include desktop {
-    max-width: 80rem;
+    // max-width: 80rem;
     margin: 0 auto;
     padding: 0 8rem;
   }
@@ -115,6 +115,16 @@ nav a {
   @include tablet {
     flex-direction: row;
     align-items: center;
+    // gap: calc(45px + 20%); // need to adjust
+  }
+}
+
+.nav__links-main {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
     gap: 2rem;
   }
 }

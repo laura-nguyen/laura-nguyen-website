@@ -2,19 +2,15 @@
 @import "./../../styles/partials/typography.scss";
 @import "./../../styles/partials/variables.scss";
 
-.main {
+.error {
   margin: 1.5rem;
-  margin-bottom: 5rem;
-  display: flex;
-
-  flex-direction: column;
 
   @include tablet {
-    padding: 3rem 3rem;
+    margin: 3rem 3rem;
   }
   @include desktop {
     max-width: 80rem;
-    padding: 2.25rem 8rem;
-    margin: 0 auto;
+    padding: 0 8rem;
+    margin: 3rem auto;
   }
 }
