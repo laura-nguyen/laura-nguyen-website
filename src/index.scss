@@ -1,5 +1,10 @@
 :root {
-  --body_background: white;
+  --body_background: #fffda5;
+  --body_background_gradient: radial-gradient(
+    at center bottom,
+    #fffda5,
+    #ffd3c2
+  );
   --body_color: black;
   --link_color: navy;
   font-synthesis: none;
@@ -9,7 +14,12 @@
 }
 
 [data-theme="dark"] {
-  --body_background: #282c34;
+  --body_background: #464646;
+  --body_background_gradient: radial-gradient(
+    at center bottom,
+    #464646,
+    #121f2e
+  );
   --body_color: white;
   --link_color: cyan;
 }
