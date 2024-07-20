@@ -14,9 +14,9 @@ const CircleText = () => {
       .join("");
   }, []);
   return (
-    <div class="circle">
-      <div class="text">
-        <p>Laura Nguyen - Marketing - and Design</p>
+    <div className="circle">
+      <div className="text">
+        <p>Laura Nguyen - Marketing </p>
       </div>
     </div>
   );
