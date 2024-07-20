@@ -1,0 +1,12 @@
+@import "./../../styles/partials/mixins.scss";
+@import "./../../styles/partials/typography.scss";
+@import "./../../styles/partials/variables.scss";
+
+.skill-list {
+  display: grid;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}

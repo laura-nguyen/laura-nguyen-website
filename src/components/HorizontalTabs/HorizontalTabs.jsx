@@ -5,12 +5,12 @@ const HorizontalTabs = () => {
   useEffect(() => {
     const filterList = document.querySelector(".horizontal-filter");
     const filterButtons = filterList.querySelectorAll(".horizontal-filter-btn");
-    const conferences = document.querySelectorAll(".conference");
+    const skills = document.querySelectorAll(".skill");
 
-    let conferenceIndex = 0;
+    let skillIndex = 0;
 
-    conferences.forEach((conference) => {
-      conference.style.viewTransitionName = `conf-${++conferenceIndex}`;
+    skills.forEach((skill) => {
+      skill.style.viewTransitionName = `conf-${++skillIndex}`;
     });
 
     filterButtons.forEach((button) => {
@@ -35,12 +35,12 @@ const HorizontalTabs = () => {
     }
 
     function filterEvents(filter) {
-      conferences.forEach((conference) => {
-        let eventCategory = conference.getAttribute("skill-category");
-        if (filter === "all" || filter === eventCategory) {
-          conference.removeAttribute("hidden");
+      skills.forEach((skill) => {
+        let skillCategory = skill.getAttribute("skill-category");
+        if (filter === "all" || filter === skillCategory) {
+          skill.removeAttribute("hidden");
         } else {
-          conference.setAttribute("hidden", "");
+          skill.setAttribute("hidden", "");
         }
       });
     }
@@ -55,38 +55,53 @@ const HorizontalTabs = () => {
               className="horizontal-filter-btn active"
               skill-filter="web-dev"
             >
-              Engineering
+              Web development
             </button>
             <button className="horizontal-filter-btn" skill-filter="growth">
               Marketing
             </button>
           </div>
 
-          <ul className="conference-list">
-            <li className="conference" skill-category="growth">
-              <div className="conference-details">
-                <span className="conference-date">March 19th - March 23rd</span>
-                <span className="conference-category">growth</span>
+          <ul className="skill-list">
+            <li className="skill" skill-category="growth">
+              <div className="skill-details">
+                <h2 className="skill-name">SQLBits</h2>
+                <span className="skill-details-list">
+                  March 19th - March 23rd
+                </span>
               </div>
-              <h2 className="conference-name">SQLBits</h2>
             </li>
 
-            <li className="conference" skill-category="web-dev">
-              <div className="conference-details">
-                <span className="conference-date">June 6th - June 7th</span>
-                <span className="conference-category">web-dev</span>
+            <li className="skill" skill-category="web-dev">
+              <div className="skill-details">
+                <h2 className="skill-name">Languages</h2>
+                <span className="skill-details-list">June 6th - June 7th</span>
               </div>
-              <h2 className="conference-name">CSS Day</h2>
             </li>
 
-            <li className="conference" skill-category="web-dev">
-              <div className="conference-details">
-                <span className="conference-date">
+            <li className="skill" skill-category="web-dev">
+              <div className="skill-details">
+                <h2 className="skill-name">Frameworks</h2>
+                <ul className="skill-details-list">
+                  <li>React</li>
+                </ul>
+              </div>
+            </li>
+            <li className="skill" skill-category="web-dev">
+              <div className="skill-details">
+                <h2 className="skill-name">Databases</h2>
+                <span className="skill-details-list">
                   September 9th - September 11th
                 </span>
-                <span className="conference-category">web-dev</span>
               </div>
-              <h2 className="conference-name">SmashingConf Freiburg</h2>
+            </li>
+            <li className="skill" skill-category="web-dev">
+              <h2 className="skill-name">Other Tools</h2>
+              <div className="skill-details">
+                <span className="skill-details-list">
+                  September 9th - September 11th
+                </span>
+              </div>
             </li>
           </ul>
         </div>

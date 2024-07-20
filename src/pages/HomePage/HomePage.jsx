@@ -1,11 +1,13 @@
 import "./HomePage.scss";
 import ProjectTabs from "../../components/ProjectTabs/ProjectTabs";
 import HorizontalTabs from "../../components/HorizontalTabs/HorizontalTabs";
+import CircleText from "../../components/CircleText/CircleText";
 const HomePage = () => {
   return (
     <>
       <main className="main">
         <h1>Hey, I'm Laura.</h1>
+        <CircleText />
         <p>
           It's your friendly neighbour growth marketer and a software developer
           from Toronto, Canada.
