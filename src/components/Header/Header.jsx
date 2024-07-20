@@ -8,6 +8,11 @@ const Header = () => {
     document.getElementById("sidebar-active").checked = false;
   };
 
+  window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+  });
+
   return (
     <header className="header">
       <NavLink to="/" className="header__logo">
