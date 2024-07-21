@@ -1,0 +1,13 @@
+@import "./../../styles/partials/mixins.scss";
+@import "./../../styles/partials/typography.scss";
+@import "./../../styles/partials/variables.scss";
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.25rem;
+}
+.about__img {
+  width: 50%;
+  border-radius: 25px;
+}

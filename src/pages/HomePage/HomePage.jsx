@@ -3,26 +3,32 @@ import ProjectTabs from "../../components/ProjectTabs/ProjectTabs";
 import HorizontalTabs from "../../components/HorizontalTabs/HorizontalTabs";
 import CircleText from "../../components/CircleText/CircleText";
 import Contact from "../../components/Contact/Contact";
+import About from "../../components/About/About";
 const HomePage = () => {
   return (
     <>
       <main className="main">
-        <h1>Hey, I'm Laura.</h1>
-        <CircleText />
-        <p>
-          It's your friendly neighbour growth marketer and a software developer
-          from Toronto, Canada.
-        </p>
-        <p>
-          Welcome to my small space on the internet. An experimental &
-          ever-changing (verging on self-absorbed) space to share who I am, what
-          I've done, what I’m doing now, what I like, and what I capture. This
-          is my formal introduction to the internet. Through lines of code, and
-          a lot of good vibes.
-        </p>
-        <p>In other words, it's nice to meet you.</p>
-        <button>See Projects</button>
+        <div className="hero">
+          <h1 className="main__title">
+            Hey, I'm Laura,
+            <br /> your friendly neighbourhood growth marketer & software
+            developer from Toronto.
+            {/* I enjoy finding human touch in a pixelated
+            world. */}
+          </h1>
+          {/* <CircleText /> */}
+          {/* <p className="hero__description">
+            Your friendly neighborhood growth marketer and software developer
+            from Toronto, Canada.
+          </p> */}
+          {/* <p>Finding human touch in a pixelated world.</p> */}
+
+          <button>See Projects</button>
+        </div>
       </main>
+      <section className="about">
+        <About />
+      </section>
       <section className="skills">
         <h1>Skills</h1>
         <HorizontalTabs />

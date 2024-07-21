@@ -18,8 +18,10 @@
   width: 100%;
   height: 100%;
   position: absolute;
+
   animation: anim 10s linear infinite;
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: "Syne", sans-serif !important;
+  text-transform: uppercase;
 }
 
 @keyframes anim {

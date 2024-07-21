@@ -3,6 +3,7 @@
 @import "./../../styles/partials/variables.scss";
 
 .main,
+.about,
 .skills,
 .projects,
 .contact {
@@ -23,8 +24,26 @@
 }
 
 .main {
-  margin-top: 6rem;
+  z-index: -10000;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
   @include tablet {
-    height: 100vh;
+  }
+
+  &__title {
+    font-size: 3rem;
+  }
+}
+
+.hero {
+  &__description {
+    font-size: 1.25rem;
+    @include tablet {
+      font-size: 1.75rem;
+    }
   }
 }

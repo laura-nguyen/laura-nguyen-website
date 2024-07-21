@@ -16,7 +16,7 @@ const CircleText = () => {
   return (
     <div className="circle">
       <div className="text">
-        <p>Avaiable for new projects</p>
+        <p>Avaiable for new projects -</p>
       </div>
     </div>
   );
