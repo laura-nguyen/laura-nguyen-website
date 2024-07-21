@@ -4,15 +4,14 @@ import HorizontalTabs from "../../components/HorizontalTabs/HorizontalTabs";
 import CircleText from "../../components/CircleText/CircleText";
 import Contact from "../../components/Contact/Contact";
 import About from "../../components/About/About";
+import { IoIosArrowRoundForward } from "react-icons/io";
 const HomePage = () => {
   return (
     <>
       <main className="main">
         <div className="hero">
           <h1 className="main__title">
-            Hey, I'm Laura,
-            <br /> your friendly neighbourhood growth marketer & software
-            developer from Toronto.
+            Hey, I'm Laura, a growth marketer & software developer from Toronto.
             {/* I enjoy finding human touch in a pixelated
             world. */}
           </h1>
@@ -23,7 +22,9 @@ const HomePage = () => {
           </p> */}
           {/* <p>Finding human touch in a pixelated world.</p> */}
 
-          <button>See Projects</button>
+          <button>
+            See Projects <IoIosArrowRoundForward />
+          </button>
         </div>
       </main>
       <section className="about">

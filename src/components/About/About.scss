@@ -11,3 +11,19 @@
   width: 50%;
   border-radius: 25px;
 }
+
+.about__socials {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.about__list::before {
+  content: ">";
+}

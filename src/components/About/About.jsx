@@ -1,6 +1,10 @@
 import "./About.scss";
 import lauraPic from "./../../assets/images/laura.jpg";
 import { FaBeer } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
+import { FaRegEnvelope } from "react-icons/fa6";
 
 const About = () => {
   return (
@@ -13,8 +17,30 @@ const About = () => {
           for startups. Currently looking for opportunities to further grow my
           skills. You can find me me at the golf course or trying different food
           dishes.
-          <FaBeer />
         </p>
+        <ul className="about__list">
+          <li>TypeScript</li>
+          <li>Tailwind CSS</li>
+          <li>Growth Marketing</li>
+          <li>Growth Marketing</li>
+          <li>Growth Marketing</li>
+          <li>Growth Marketing</li>
+        </ul>
+        <div className="about__socials">
+          <NavLink
+            to="https://www.linkedin.com/in/laura-nguyen/"
+            target="_blank"
+          >
+            <FaLinkedin />
+          </NavLink>
+
+          <NavLink to="https://github.com/lauranguyen" target="_blank">
+            <FaGithub />
+          </NavLink>
+          <NavLink to="mailto:hello@lauranguyen.me" target="_blank">
+            <FaRegEnvelope />
+          </NavLink>
+        </div>
       </div>
 
       <img
