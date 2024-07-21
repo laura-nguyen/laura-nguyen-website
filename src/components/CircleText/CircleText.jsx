@@ -16,7 +16,7 @@ const CircleText = () => {
   return (
     <div className="circle">
       <div className="text">
-        <p>Laura Nguyen - Marketing </p>
+        <p>Avaiable for new projects</p>
       </div>
     </div>
   );

@@ -14,11 +14,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          {/* <Route path="/skills" element={<Skills />} />
-          <Route path="/projects/:projectId" element={<Projects />} />
-          <Route path="/about" element={<About />} />
 
-          <Route path="/*" element={<PageNotFound />} /> */}
+          <Route path="/*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </>

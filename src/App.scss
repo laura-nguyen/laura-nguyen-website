@@ -8,12 +8,12 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  font-family: "Nohemi", "Helvetica", "Arial", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   line-height: 1.5;
 }
 
 body {
-  background: var(--body_background);
+  // background: var(--body_background);
   background: var(--body_background_gradient);
   background-repeat: no-repeat;
 
@@ -35,6 +35,9 @@ h1 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 
   @include tablet {
     margin-bottom: 2rem;

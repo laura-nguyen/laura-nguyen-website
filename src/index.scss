@@ -1,10 +1,12 @@
 :root {
-  --body_background: #fffda5;
-  --body_background_gradient: radial-gradient(
-    at center bottom,
-    #fffda5,
-    #ffd3c2
+  --body_background: rgb(222, 255, 208);
+  --body_background_gradient: linear-gradient(
+    144deg,
+    rgba(222, 255, 208, 1) 0%,
+    rgba(242, 242, 242, 1) 50%,
+    rgba(255, 231, 251, 1) 100%
   );
+
   --body_color: black;
   --link_color: navy;
   font-synthesis: none;
@@ -14,11 +16,12 @@
 }
 
 [data-theme="dark"] {
-  --body_background: #464646;
-  --body_background_gradient: radial-gradient(
-    at center bottom,
-    #464646,
-    #121f2e
+  --body_background: rgb(0, 104, 60);
+  --body_background_gradient: linear-gradient(
+    39deg,
+    rgba(0, 104, 60, 1) 0%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(94, 0, 83, 1) 100%
   );
   --body_color: white;
   --link_color: cyan;

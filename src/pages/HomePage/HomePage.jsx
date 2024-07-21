@@ -2,6 +2,7 @@ import "./HomePage.scss";
 import ProjectTabs from "../../components/ProjectTabs/ProjectTabs";
 import HorizontalTabs from "../../components/HorizontalTabs/HorizontalTabs";
 import CircleText from "../../components/CircleText/CircleText";
+import Contact from "../../components/Contact/Contact";
 const HomePage = () => {
   return (
     <>
@@ -21,38 +22,6 @@ const HomePage = () => {
         </p>
         <p>In other words, it's nice to meet you.</p>
         <button>See Projects</button>
-        <ul className="home-social">
-          <li>
-            <a href="https://www.linkedin.com/in/laura-nguyen/" target="_blank">
-              <i className="fa fa-envelope" aria-hidden="true"></i>
-              <span>Connect</span>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:hello@lauranguyen.me" target="_blank">
-              <i className="fa fa-linkedin" aria-hidden="true"></i>
-              <span>Message</span>
-            </a>
-          </li>
-          <li>
-            <a href="#0">
-              <i className="fa fa-instagram" aria-hidden="true"></i>
-              <span>Instagram</span>
-            </a>
-          </li>
-          <li>
-            <a href="#0">
-              <i className="fa fa-behance" aria-hidden="true"></i>
-              <span>Behance</span>
-            </a>
-          </li>
-          <li>
-            <a href="#0">
-              <i className="fa fa-dribbble" aria-hidden="true"></i>
-              <span>Dribbble</span>
-            </a>
-          </li>
-        </ul>
       </main>
       <section className="skills">
         <h1>Skills</h1>
@@ -60,6 +29,9 @@ const HomePage = () => {
       </section>
       <section className="projects">
         <ProjectTabs />
+      </section>
+      <section className="contact">
+        <Contact />
       </section>
     </>
   );
