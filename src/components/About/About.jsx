@@ -1,5 +1,6 @@
 import "./About.scss";
 import lauraPic from "./../../assets/images/laura.jpg";
+import { FaBeer } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -12,6 +13,7 @@ const About = () => {
           for startups. Currently looking for opportunities to further grow my
           skills. You can find me me at the golf course or trying different food
           dishes.
+          <FaBeer />
         </p>
       </div>
 
