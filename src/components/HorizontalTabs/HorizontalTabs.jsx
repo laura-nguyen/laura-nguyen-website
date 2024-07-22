@@ -1,5 +1,28 @@
 import "./HorizontalTabs.scss";
 import { useEffect } from "react";
+import { FaJava } from "react-icons/fa";
+import {
+  SiPython,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiSass,
+  SiSqlite,
+  SiReact,
+  SiNodedotjs,
+  SiExpress,
+  SiAxios,
+  SiTensorflow,
+  SiMysql,
+  SiMongodb,
+  SiGit,
+  SiVisualstudiocode,
+  SiFigma,
+  SiPostman,
+  SiJira,
+  SiHeroku,
+  SiKnexdotjs,
+} from "react-icons/si";
 
 const HorizontalTabs = () => {
   useEffect(() => {
@@ -52,16 +75,22 @@ const HorizontalTabs = () => {
     <div className="content-grid">
       <main className="main-with-aside">
         <div className="flow">
-          <div className="horizontal-filter">
-            <button
-              className="horizontal-filter-btn active"
-              skill-filter="web-dev"
-            >
-              Web development
-            </button>
-            <button className="horizontal-filter-btn" skill-filter="growth">
-              Marketing
-            </button>
+          <div className="filter-container">
+            <h1>Skills</h1>
+            <div className="horizontal-filter">
+              Filter by:
+              <div className="button-container">
+                <button
+                  className="horizontal-filter-btn active"
+                  skill-filter="web-dev"
+                >
+                  Web Development
+                </button>
+                <button className="horizontal-filter-btn" skill-filter="growth">
+                  Marketing
+                </button>
+              </div>
+            </div>
           </div>
 
           <ul className="skill-list">
@@ -69,13 +98,28 @@ const HorizontalTabs = () => {
               <div className="skill-details">
                 <h2 className="skill-name">Languages</h2>
                 <ul className="skill-details-list">
-                  <li>Python</li>
-                  <li>Java</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>Sass</li>
-                  <li>SQL</li>
+                  <li className="skill-detail-list__tag">
+                    <SiPython /> Python
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <FaJava />
+                    Java
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <SiHtml5 /> HTML
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <SiCss3 /> CSS
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <SiJavascript /> JavaScript
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <SiSass /> Sass
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <SiSqlite /> SQL
+                  </li>
                 </ul>
               </div>
             </li>
@@ -84,35 +128,64 @@ const HorizontalTabs = () => {
               <div className="skill-details">
                 <h2 className="skill-name">Frameworks & Libraries</h2>
                 <ul className="skill-details-list">
-                  <li>React.js</li>
-                  <li>Node.js</li>
-                  <li>Express</li>
-                  <li>Knex.js</li>
-                  <li>Axios</li>
-                  <li>Tensorflow</li>
+                  <li className="skill-detail-list__tag">
+                    <SiReact /> React.js
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <SiNodedotjs /> Node.js
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <SiExpress /> Express
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <SiKnexdotjs /> Knex.js
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <SiAxios /> Axios
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <SiTensorflow /> Tensorflow
+                  </li>
                 </ul>
               </div>
             </li>
+
             <li className="skill" skill-category="web-dev">
               <div className="skill-details">
                 <h2 className="skill-name">Databases</h2>
                 <ul className="skill-details-list">
-                  <li>MySQL</li>
-                  <li>MongoDB</li>
+                  <li className="skill-detail-list__tag">
+                    <SiMysql /> MySQL
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <SiMongodb /> MongoDB
+                  </li>
                 </ul>
               </div>
             </li>
+
             <li className="skill" skill-category="web-dev">
               <h2 className="skill-name">Other Tools</h2>
               <div className="skill-details">
                 <ul className="skill-details-list">
-                  <li>Git</li>
-                  <li>VS Code</li>
-                  <li>Figma</li>
-                  <li>Postman</li>
-                  <li>Jira</li>
-                  <li>Heroku</li>
-                  <li>Jest</li>
+                  <li className="skill-detail-list__tag">
+                    <SiGit /> Git
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <SiVisualstudiocode /> VS Code
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <SiFigma /> Figma
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <SiPostman /> Postman
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <SiJira /> Jira
+                  </li>
+                  <li className="skill-detail-list__tag">
+                    <SiHeroku /> Heroku
+                  </li>
                 </ul>
               </div>
             </li>

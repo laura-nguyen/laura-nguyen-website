@@ -1,6 +1,9 @@
 import "./ProjectTabs.scss";
 import { useEffect } from "react";
 import pho from "./../../assets/images/pho.jpg";
+import yogainstructCover from "./../../assets/gifs/yogainstruct.gif";
+import { HiOutlineCodeBracket } from "react-icons/hi2";
+import { HiOutlineExternalLink } from "react-icons/hi";
 
 const ProjectTabs = () => {
   useEffect(() => {
@@ -57,20 +60,32 @@ const ProjectTabs = () => {
               <button className="filter-btn active" data-filter="all">
                 All
               </button>
-              <button className="filter-btn" data-filter="frontend">
+              <button className="filter-btn" data-filter="web-dev">
                 Web Development
               </button>
-              <button className="filter-btn" data-filter="backend">
+              <button className="filter-btn" data-filter="growth">
                 Marketing
               </button>
             </div>
           </div>
 
           <ul className="project-list">
-            <li className="project" data-category="backend">
+            <li className="project" data-category="web-dev">
               <div className="project-details">
-                <img className="project-img" src={pho} alt="" />
-                <h2 className="project-name">SQLBits</h2>
+                <div className="project__img-wrapper">
+                  <img className="project-img" src={yogainstructCover} alt="" />
+                </div>
+                <div className="project__header">
+                  <h3 className="project-name">YogAInstruct</h3>
+                  <div className="project-links">
+                    <button className="project-link">
+                      Site <HiOutlineExternalLink />
+                    </button>
+                    <button className="project-link">
+                      Code <HiOutlineCodeBracket />
+                    </button>
+                  </div>
+                </div>
                 <ul className="project-tags">
                   <li className="project-tag">HTML</li>
                   <li className="project-tag">CSS</li>
@@ -81,16 +96,14 @@ const ProjectTabs = () => {
                   Lorm Ipsum for Brainstation Capstone
                 </p>
               </div>
-              <div className="project-links">
-                <button>Live Demo</button>
-                <button>View Repo</button>
-              </div>
             </li>
 
             <li className="project" data-category="frontend">
               <div className="project-details">
-                <img className="project-img" src={pho} alt="" />
-                <h2 className="project-name">CSS Day</h2>
+                <div className="project__img-wrapper">
+                  <img className="project-img" src={pho} alt="" />
+                </div>
+                <h3 className="project-name">CSS Day</h3>
                 <span className="project-date">June 6th - June 7th</span>
                 <span className="project-category">Frontend</span>
               </div>
@@ -98,8 +111,22 @@ const ProjectTabs = () => {
 
             <li className="project" data-category="frontend">
               <div className="project-details">
-                <img className="project-img" src={pho} alt="" />
-                <h2 className="project-name">SmashingConf Freiburg</h2>
+                <div className="project__img-wrapper">
+                  <img className="project-img" src={pho} alt="" />
+                </div>
+                <h3 className="project-name">SmashingConf Freiburg</h3>
+                <span className="project-date">
+                  September 9th - September 11th
+                </span>
+                <span className="project-category">Frontend</span>
+              </div>
+            </li>
+            <li className="project" data-category="frontend">
+              <div className="project-details">
+                <div className="project__img-wrapper">
+                  <img className="project-img" src={pho} alt="" />
+                </div>
+                <h3 className="project-name">SmashingConf Freiburg</h3>
                 <span className="project-date">
                   September 9th - September 11th
                 </span>
@@ -109,7 +136,7 @@ const ProjectTabs = () => {
             <li className="project" data-category="frontend">
               <div className="project-details">
                 <img className="project-img" src={pho} alt="" />
-                <h2 className="project-name">SmashingConf Freiburg</h2>
+                <h3 className="project-name">SmashingConf Freiburg</h3>
                 <span className="project-date">
                   September 9th - September 11th
                 </span>
@@ -119,17 +146,7 @@ const ProjectTabs = () => {
             <li className="project" data-category="frontend">
               <div className="project-details">
                 <img className="project-img" src={pho} alt="" />
-                <h2 className="project-name">SmashingConf Freiburg</h2>
-                <span className="project-date">
-                  September 9th - September 11th
-                </span>
-                <span className="project-category">Frontend</span>
-              </div>
-            </li>
-            <li className="project" data-category="frontend">
-              <div className="project-details">
-                <img className="project-img" src={pho} alt="" />
-                <h2 className="project-name">SmashingConf Freiburg</h2>
+                <h3 className="project-name">SmashingConf Freiburg</h3>
                 <span className="project-date">
                   September 9th - September 11th
                 </span>

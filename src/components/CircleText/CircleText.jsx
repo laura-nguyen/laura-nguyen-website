@@ -9,14 +9,14 @@ const CircleText = () => {
       .split("")
       .map(
         (char, i) =>
-          `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
+          `<span style="transform:rotate(${i * 7}deg)">${char}</span>`
       )
       .join("");
   }, []);
   return (
     <div className="circle">
       <div className="text">
-        <p>Avaiable for new projects -</p>
+        <p>Avaiable - for - new - projects -</p>
       </div>
     </div>
   );

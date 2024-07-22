@@ -23,27 +23,99 @@
   }
 }
 
+.about,
+.skills {
+  @include desktop {
+    margin-bottom: 5rem;
+  }
+}
+
 .main {
-  z-index: -10000;
-  height: 90vh;
+  //   z-index: -10000;
+  overflow: hidden;
+  height: 80vh;
   display: flex;
   justify-content: center;
+
+  @include tablet {
+    height: 90vh;
+  }
+
   //   display: flex;
   //   flex-direction: column;
   //   align-items: center;
-  @include tablet {
-  }
 
   &__title {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-bottom: 0;
+    @include tablet {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
   }
 }
 
 .hero {
   &__description {
     font-size: 1.25rem;
+    position: relative;
+
     @include tablet {
       font-size: 1.75rem;
     }
+  }
+}
+
+.main__circle {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  overflow: hidden;
+
+  top: 50vh;
+  left: 50vw;
+
+  @include desktop {
+    top: 84vh;
+
+    right: 250px;
+  }
+}
+
+.main__btn {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  @include tablet {
+    font-size: 1.5rem;
+  }
+}
+
+.arrow-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: bounce-right 2s infinite;
+}
+
+@keyframes bounce-right {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-100%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
   }
 }

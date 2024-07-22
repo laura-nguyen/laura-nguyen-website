@@ -4,28 +4,28 @@ import { FaBeer } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
-import { FaRegEnvelope } from "react-icons/fa6";
+import { ImMail } from "react-icons/im";
 
 const About = () => {
   return (
     <div className="about-wrapper">
-      <div>
+      <div className="about__copy">
         <h1>About</h1>
-        <p>Lorem ipsum</p>
+
         <p>
           Welcome to my small corner on the internet. Worked in growth marketing
           for startups. Currently looking for opportunities to further grow my
           skills. You can find me me at the golf course or trying different food
           dishes.
         </p>
-        <ul className="about__list">
+        {/* <ul className="about__list">
           <li>TypeScript</li>
           <li>Tailwind CSS</li>
           <li>Growth Marketing</li>
           <li>Growth Marketing</li>
           <li>Growth Marketing</li>
           <li>Growth Marketing</li>
-        </ul>
+        </ul> */}
         <div className="about__socials">
           <NavLink
             to="https://www.linkedin.com/in/laura-nguyen/"
@@ -38,7 +38,7 @@ const About = () => {
             <FaGithub />
           </NavLink>
           <NavLink to="mailto:hello@lauranguyen.me" target="_blank">
-            <FaRegEnvelope />
+            <ImMail />
           </NavLink>
         </div>
       </div>
@@ -46,7 +46,7 @@ const About = () => {
       <img
         src={lauraPic}
         alt="pic of laura nguyen"
-        srcset=""
+        srcSet=""
         className="about__img"
       />
     </div>

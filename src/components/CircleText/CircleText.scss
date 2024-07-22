@@ -4,24 +4,41 @@
 
 .circle {
   position: relative;
+  //   background-image: url(./../../assets/icons/logo-lotus.png);
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: 50%;
+
   width: 200px;
   height: 200px;
-  background: red;
+  //   background: red;
   border-radius: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   animation: spin 10s linear infinite;
+  transform-origin: center;
+
+  //   @include mobile {
+  //     width: 150px;
+  //     height: 150px;
+  //   }
 }
 
 .text {
   width: 100%;
   height: 100%;
   position: absolute;
-
-  animation: anim 10s linear infinite;
   font-family: "Syne", sans-serif !important;
+  animation: anim 10s linear infinite;
+  //   top: 200px;
+  //   right: 0;
+
   text-transform: uppercase;
+}
+
+.text p {
+  font-family: "Syne", sans-serif !important;
 }
 
 @keyframes anim {
@@ -36,6 +53,6 @@
 .text span {
   position: absolute;
   left: 50%;
-  font-size: 1.2em;
+
   transform-origin: 0 100px;
 }

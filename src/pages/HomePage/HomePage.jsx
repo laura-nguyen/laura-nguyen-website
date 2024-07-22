@@ -5,33 +5,40 @@ import CircleText from "../../components/CircleText/CircleText";
 import Contact from "../../components/Contact/Contact";
 import About from "../../components/About/About";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { HiMiniArrowLongRight } from "react-icons/hi2";
 const HomePage = () => {
   return (
     <>
       <main className="main">
         <div className="hero">
           <h1 className="main__title">
-            Hey, I'm Laura, a growth marketer & software developer from Toronto.
+            Hey, I'm Laura, I'm a growth marketer & software developer from
+            Toronto.
             {/* I enjoy finding human touch in a pixelated
             world. */}
           </h1>
-          {/* <CircleText /> */}
+
           {/* <p className="hero__description">
             Your friendly neighborhood growth marketer and software developer
             from Toronto, Canada.
           </p> */}
           {/* <p>Finding human touch in a pixelated world.</p> */}
 
-          <button>
-            See Projects <IoIosArrowRoundForward />
+          <button className="main__btn">
+            See Projects
+            <div className="arrow-container">
+              <HiMiniArrowLongRight className="arrow" />
+            </div>
           </button>
         </div>
+        {/* <div className="main__circle">
+          <CircleText />
+        </div> */}
       </main>
       <section className="about">
         <About />
       </section>
       <section className="skills">
-        <h1>Skills</h1>
         <HorizontalTabs />
       </section>
       <section className="projects">
