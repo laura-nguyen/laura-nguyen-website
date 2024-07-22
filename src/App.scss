@@ -25,6 +25,7 @@ body {
 
 a {
   color: var(--link_color);
+  font-weight: 600;
 }
 
 .icon {
@@ -47,11 +48,13 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  font-family: "Syne", sans-serif;
+  text-transform: uppercase;
   margin-bottom: 1.5rem;
   font-weight: 600;
 
   @include tablet {
-    font-size: 2.25rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
   }
 }
@@ -59,6 +62,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: 600;
+  margin-bottom: 1rem;
 
   @include tablet {
     font-size: 2rem;
@@ -111,4 +115,10 @@ li {
 
 button {
   cursor: pointer;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  background-color: var(--link_color);
+  border: none;
+
+  border-radius: 25px;
 }

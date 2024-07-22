@@ -1,10 +1,14 @@
+@import "./styles/partials/mixins.scss";
+@import "./styles/partials/typography.scss";
+@import "./styles/partials/variables.scss";
+
 :root {
   --body_background: rgb(222, 255, 208);
   --body_background_gradient: linear-gradient(
     144deg,
     rgba(222, 255, 208, 1) 0%,
     rgba(242, 242, 242, 1) 50%,
-    rgba(255, 231, 251, 1) 100%
+    rgba(222, 255, 208, 1) 100%
   );
 
   --body_color: black;
@@ -16,13 +20,8 @@
 }
 
 [data-theme="dark"] {
-  --body_background: rgb(0, 104, 60);
-  --body_background_gradient: linear-gradient(
-    39deg,
-    rgba(0, 104, 60, 1) 0%,
-    rgba(0, 0, 0, 1) 50%,
-    rgba(94, 0, 83, 1) 100%
-  );
+  --body_background: #121212;
+  --body_background_gradient: #121212;
   --body_color: white;
-  --link_color: cyan;
+  --link_color: #edffe5;
 }

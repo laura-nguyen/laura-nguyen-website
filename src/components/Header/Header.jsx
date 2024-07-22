@@ -82,11 +82,19 @@ const Header = () => {
                 ETC.
               </NavLink>
 
-              <div className="nav__link-wrapper--cta">
+              <NavLink
+                to="/"
+                className="nav__link--non-button"
+                onClick={handleNavLinkClick}
+              >
+                CONTACT
+              </NavLink>
+
+              {/* <div className="nav__link-wrapper--cta">
                 <NavLink to="/">
                   <button className="nav__link--cta">CONTACT</button>
                 </NavLink>
-              </div>
+              </div> */}
             </div>
 
             <DarkMode />

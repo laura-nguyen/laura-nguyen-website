@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className="contact-content">
       <div>
-        <h1>Get in touch.</h1>
+        <h2>Get in touch.</h2>
         <p>Fill out the form below and I'll get back to you shortly.</p>
         <ul className="contact-social-links">
           <li>

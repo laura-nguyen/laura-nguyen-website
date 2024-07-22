@@ -55,7 +55,7 @@ const ProjectTabs = () => {
       <main className="content">
         <div className="flow">
           <div className="filter-container">
-            <h1>Projects</h1>
+            <h2>Projects</h2>
             <div className="filter">
               <button className="filter-btn active" data-filter="all">
                 All

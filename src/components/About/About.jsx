@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div className="about-wrapper">
       <div className="about__copy">
-        <h1>About</h1>
+        <h2>About</h2>
 
         <p>
           Welcome to my small corner on the internet. Worked in growth marketing

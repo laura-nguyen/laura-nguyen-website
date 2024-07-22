@@ -96,7 +96,7 @@ const HorizontalTabs = () => {
           <ul className="skill-list">
             <li className="skill" skill-category="web-dev">
               <div className="skill-details">
-                <h2 className="skill-name">Languages</h2>
+                <h3 className="skill-name">Languages</h3>
                 <ul className="skill-details-list">
                   <li className="skill-detail-list__tag">
                     <SiPython /> Python
@@ -126,7 +126,7 @@ const HorizontalTabs = () => {
 
             <li className="skill" skill-category="web-dev">
               <div className="skill-details">
-                <h2 className="skill-name">Frameworks & Libraries</h2>
+                <h3 className="skill-name">Frameworks & Libraries</h3>
                 <ul className="skill-details-list">
                   <li className="skill-detail-list__tag">
                     <SiReact /> React.js
@@ -152,7 +152,7 @@ const HorizontalTabs = () => {
 
             <li className="skill" skill-category="web-dev">
               <div className="skill-details">
-                <h2 className="skill-name">Databases</h2>
+                <h3 className="skill-name">Databases</h3>
                 <ul className="skill-details-list">
                   <li className="skill-detail-list__tag">
                     <SiMysql /> MySQL
@@ -165,7 +165,7 @@ const HorizontalTabs = () => {
             </li>
 
             <li className="skill" skill-category="web-dev">
-              <h2 className="skill-name">Other Tools</h2>
+              <h3 className="skill-name">Other Tools</h3>
               <div className="skill-details">
                 <ul className="skill-details-list">
                   <li className="skill-detail-list__tag">
@@ -192,7 +192,7 @@ const HorizontalTabs = () => {
 
             <li className="skill" skill-category="growth">
               <div className="skill-details">
-                <h2 className="skill-name">Web Design & Development</h2>
+                <h3 className="skill-name">Web Design & Development</h3>
                 <ul className="skill-details-list">
                   <li>
                     Design and develop landing pages using HTML, CSS, and
@@ -212,7 +212,7 @@ const HorizontalTabs = () => {
 
             <li className="skill" skill-category="growth">
               <div className="skill-details">
-                <h2 className="skill-name">Email Marketing & SMS</h2>
+                <h3 className="skill-name">Email Marketing & SMS</h3>
                 <ul className="skill-details-list">
                   <li>
                     Create and manage effective, personalized email and SMS
@@ -233,9 +233,9 @@ const HorizontalTabs = () => {
 
             <li className="skill" skill-category="growth">
               <div className="skill-details">
-                <h2 className="skill-name">
+                <h3 className="skill-name">
                   Marketing Analytics & Integration
-                </h2>
+                </h3>
                 <ul className="skill-details-list">
                   <li>
                     Provide comprehensive funnel analytics and actionable
@@ -263,7 +263,7 @@ const HorizontalTabs = () => {
 
             <li className="skill" skill-category="growth">
               <div className="skill-details">
-                <h2 className="skill-name">SEO & Paid Ads</h2>
+                <h3 className="skill-name">SEO & Paid Ads</h3>
                 <ul className="skill-details-list">
                   <li>
                     Conduct thorough keyword research to improve organic search

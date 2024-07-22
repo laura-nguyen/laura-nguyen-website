@@ -6,6 +6,7 @@ import Contact from "../../components/Contact/Contact";
 import About from "../../components/About/About";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { HiMiniArrowLongRight } from "react-icons/hi2";
+import ReactCurvedText from "react-curved-text";
 const HomePage = () => {
   return (
     <>
@@ -31,9 +32,9 @@ const HomePage = () => {
             </div>
           </button>
         </div>
-        {/* <div className="main__circle">
+        <div className="main__circle">
           <CircleText />
-        </div> */}
+        </div>
       </main>
       <section className="about">
         <About />
