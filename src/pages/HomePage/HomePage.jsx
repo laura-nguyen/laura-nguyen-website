@@ -6,7 +6,8 @@ import Contact from "../../components/Contact/Contact";
 import About from "../../components/About/About";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { HiMiniArrowLongRight } from "react-icons/hi2";
-import ReactCurvedText from "react-curved-text";
+// import ReactCurvedText from "react-curved-text";
+import ScrollingText from "../../components/ScrollingText/ScrollingText";
 const HomePage = () => {
   return (
     <>
@@ -45,6 +46,7 @@ const HomePage = () => {
       <section className="projects">
         <ProjectTabs />
       </section>
+      <ScrollingText />
       <section className="contact">
         <Contact />
       </section>
