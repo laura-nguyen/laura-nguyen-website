@@ -32,9 +32,9 @@ const HomePage = () => {
             </div>
           </button>
         </div>
-        <div className="main__circle">
+        {/* <div className="main__circle">
           <CircleText />
-        </div>
+        </div> */}
       </main>
       <section className="about">
         <About />

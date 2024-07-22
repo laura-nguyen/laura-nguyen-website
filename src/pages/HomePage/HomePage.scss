@@ -24,7 +24,8 @@
 }
 
 .about,
-.skills {
+.skills,
+.projects {
   @include desktop {
     margin-bottom: 5rem;
   }
@@ -32,7 +33,7 @@
 
 .main {
   //   z-index: -10000;
-  overflow: hidden;
+
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -70,15 +71,19 @@
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  overflow: hidden;
 
-  top: 50vh;
-  left: 50vw;
+  top: 0;
+  left: 0;
+
+  @include tablet {
+    top: 50vh;
+    left: 50vw;
+  }
 
   @include desktop {
     top: 84vh;
 
-    right: 250px;
+    right: 0;
   }
 }
 

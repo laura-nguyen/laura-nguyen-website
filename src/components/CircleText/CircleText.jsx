@@ -9,7 +9,7 @@ const CircleText = () => {
       .split("")
       .map(
         (char, i) =>
-          `<span style="transform:rotate(${i * 7}deg)">${char}</span>`
+          `<span style="transform:rotate(${i * 6.9}deg)">${char}</span>`
       )
       .join("");
   }, []);

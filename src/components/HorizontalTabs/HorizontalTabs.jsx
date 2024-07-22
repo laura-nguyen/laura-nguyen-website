@@ -144,7 +144,7 @@ const HorizontalTabs = () => {
                     <SiAxios /> Axios
                   </li>
                   <li className="skill-detail-list__tag">
-                    <SiTensorflow /> Tensorflow
+                    <SiTensorflow /> TensorFlow
                   </li>
                 </ul>
               </div>

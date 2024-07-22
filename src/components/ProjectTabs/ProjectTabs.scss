@@ -60,6 +60,10 @@
   gap: 1rem;
 
   @include tablet {
+    gap: 2rem;
+  }
+
+  @include desktop {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
@@ -101,6 +105,9 @@
 .project-links {
   display: flex;
   gap: 1rem;
+  @include tablet {
+    gap: 2rem;
+  }
 }
 
 .project-link {
@@ -109,6 +116,19 @@
   gap: 0.5rem;
   background: none;
   border: none;
-  font-size: 1rem;
+
   color: var(--link_color);
+  font-size: clamp(0.9rem, 1vw, 1rem);
+
+  @include tablet {
+    font-size: 1rem;
+  }
+
+  @include desktop {
+    font-size: 1rem;
+  }
+}
+
+.project-link-wrapper {
+  display: flex;
 }

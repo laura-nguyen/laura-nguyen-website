@@ -4,6 +4,10 @@ import pho from "./../../assets/images/pho.jpg";
 import yogainstructCover from "./../../assets/gifs/yogainstruct.gif";
 import { HiOutlineCodeBracket } from "react-icons/hi2";
 import { HiOutlineExternalLink } from "react-icons/hi";
+import { NavLink, Link } from "react-router-dom";
+import bandsite from "./../../assets/images/bandsite.png";
+import brainflix from "./../../assets/gifs/brainflix.gif";
+import instock from "./../../assets/gifs/instock.gif";
 
 const ProjectTabs = () => {
   useEffect(() => {
@@ -72,85 +76,195 @@ const ProjectTabs = () => {
           <ul className="project-list">
             <li className="project" data-category="web-dev">
               <div className="project-details">
-                <div className="project__img-wrapper">
-                  <img className="project-img" src={yogainstructCover} alt="" />
-                </div>
+                <Link to="https://yoga-ai.pages.dev/" target="_blank">
+                  <div className="project__img-wrapper">
+                    <img
+                      className="project-img"
+                      src={yogainstructCover}
+                      alt=""
+                    />
+                  </div>
+                </Link>
                 <div className="project__header">
                   <h3 className="project-name">YogAInstruct</h3>
                   <div className="project-links">
-                    <button className="project-link">
-                      Site <HiOutlineExternalLink />
-                    </button>
-                    <button className="project-link">
-                      Code <HiOutlineCodeBracket />
-                    </button>
+                    <Link
+                      to="https://yoga-ai.pages.dev/"
+                      target="_blank"
+                      className="project-link-wrapper"
+                    >
+                      <button className="project-link">
+                        Site <HiOutlineExternalLink />
+                      </button>
+                    </Link>
+                    <Link
+                      to="https://yoga-ai.pages.dev/"
+                      target="_blank"
+                      className="project-link-wrapper"
+                    >
+                      <button className="project-link">
+                        Code <HiOutlineCodeBracket />
+                      </button>
+                    </Link>
                   </div>
                 </div>
                 <ul className="project-tags">
-                  <li className="project-tag">HTML</li>
-                  <li className="project-tag">CSS</li>
-                  <li className="project-tag">Knex</li>
-                  <li className="project-tag">HTML</li>
+                  <li className="project-tag">React</li>
+                  <li className="project-tag">Javascript</li>
+                  <li className="project-tag">Sass</li>
+                  <li className="project-tag">TensorFlow</li>
+                  <li className="project-tag">ml5</li>
+                  <li className="project-tag">p5</li>
                 </ul>
                 <p className="project-date">
-                  Lorm Ipsum for Brainstation Capstone
+                  Leveraging machine learning to provide real-time feedback and
+                  pose estimation to improve yoga practice.
                 </p>
               </div>
             </li>
 
-            <li className="project" data-category="frontend">
+            <li className="project" data-category="web-dev">
               <div className="project-details">
-                <div className="project__img-wrapper">
-                  <img className="project-img" src={pho} alt="" />
+                <Link
+                  to="https://laura-nguyen-bandsite.pages.dev/"
+                  target="_blank"
+                >
+                  <div className="project__img-wrapper">
+                    <img className="project-img" src={bandsite} alt="" />
+                  </div>
+                </Link>
+                <div className="project__header">
+                  <h3 className="project-name">Bandsite</h3>
+                  <div className="project-links">
+                    <Link
+                      to="https://laura-nguyen-bandsite.pages.dev/"
+                      target="_blank"
+                      className="project-link-wrapper"
+                    >
+                      <button className="project-link">
+                        Site <HiOutlineExternalLink />
+                      </button>
+                    </Link>
+                    <Link
+                      to="https://github.com/laura-nguyen/laura-nguyen-bandsite"
+                      target="_blank"
+                      className="project-link-wrapper"
+                    >
+                      <button className="project-link">
+                        Code <HiOutlineCodeBracket />
+                      </button>
+                    </Link>
+                  </div>
                 </div>
-                <h3 className="project-name">CSS Day</h3>
-                <span className="project-date">June 6th - June 7th</span>
-                <span className="project-category">Frontend</span>
+                <ul className="project-tags">
+                  <li className="project-tag">Axios</li>
+                  <li className="project-tag">Javascript</li>
+                  <li className="project-tag">Sass</li>
+                  <li className="project-tag">React</li>
+                </ul>
+                <p className="project-date">
+                  A fully responsive front-end application for the fictional
+                  band 'The Bees Knees' with dynamic tour data and the ability
+                  to post comments.
+                </p>
               </div>
             </li>
 
-            <li className="project" data-category="frontend">
+            <li className="project" data-category="web-dev">
               <div className="project-details">
-                <div className="project__img-wrapper">
-                  <img className="project-img" src={pho} alt="" />
+                <Link
+                  to="https://github.com/laura-nguyen/laura-nguyen-brainflix/"
+                  target="_blank"
+                >
+                  <div className="project__img-wrapper">
+                    <img className="project-img" src={brainflix} alt="" />
+                  </div>
+                </Link>
+                <div className="project__header">
+                  <h3 className="project-name">Brainflix</h3>
+                  <div className="project-links">
+                    {/* <Link
+                      to="https://laura-nguyen-bandsite.pages.dev/"
+                      target="_blank"
+                      className="project-link-wrapper"
+                    >
+                      <button className="project-link">
+                        Site <HiOutlineExternalLink />
+                      </button>
+                    </Link> */}
+                    <Link
+                      to="https://github.com/laura-nguyen/laura-nguyen-brainflix"
+                      target="_blank"
+                      className="project-link-wrapper"
+                    >
+                      <button className="project-link">
+                        Code <HiOutlineCodeBracket />
+                      </button>
+                    </Link>
+                  </div>
                 </div>
-                <h3 className="project-name">SmashingConf Freiburg</h3>
-                <span className="project-date">
-                  September 9th - September 11th
-                </span>
-                <span className="project-category">Frontend</span>
+                <ul className="project-tags">
+                  <li className="project-tag">React</li>
+                  <li className="project-tag">Axios</li>
+                  <li className="project-tag">Express</li>
+                  <li className="project-tag">Javascript</li>
+                  <li className="project-tag">Sass</li>
+                </ul>
+                <p className="project-date">
+                  A mock YouTube single-page application (SPA) for streaming and
+                  uploading videos, built as a responsive app prototype using
+                  static function components and integrating with a backend API
+                  under development.
+                </p>
               </div>
             </li>
-            <li className="project" data-category="frontend">
+
+            <li className="project" data-category="web-dev">
               <div className="project-details">
-                <div className="project__img-wrapper">
-                  <img className="project-img" src={pho} alt="" />
+                <Link
+                  to="https://github.com/laura-nguyen/red-eyed-tree-frog-instock-client"
+                  target="_blank"
+                >
+                  <div className="project__img-wrapper">
+                    <img className="project-img" src={instock} alt="" />
+                  </div>
+                </Link>
+                <div className="project__header">
+                  <h3 className="project-name">InStock</h3>
+                  <div className="project-links">
+                    {/* <Link
+                      to="https://laura-nguyen-bandsite.pages.dev/"
+                      target="_blank"
+                      className="project-link-wrapper"
+                    >
+                      <button className="project-link">
+                        Site <HiOutlineExternalLink />
+                      </button>
+                    </Link> */}
+                    <Link
+                      to="https://github.com/laura-nguyen/red-eyed-tree-frog-instock-client"
+                      target="_blank"
+                      className="project-link-wrapper"
+                    >
+                      <button className="project-link">
+                        Code <HiOutlineCodeBracket />
+                      </button>
+                    </Link>
+                  </div>
                 </div>
-                <h3 className="project-name">SmashingConf Freiburg</h3>
-                <span className="project-date">
-                  September 9th - September 11th
-                </span>
-                <span className="project-category">Frontend</span>
-              </div>
-            </li>
-            <li className="project" data-category="frontend">
-              <div className="project-details">
-                <img className="project-img" src={pho} alt="" />
-                <h3 className="project-name">SmashingConf Freiburg</h3>
-                <span className="project-date">
-                  September 9th - September 11th
-                </span>
-                <span className="project-category">Frontend</span>
-              </div>
-            </li>
-            <li className="project" data-category="frontend">
-              <div className="project-details">
-                <img className="project-img" src={pho} alt="" />
-                <h3 className="project-name">SmashingConf Freiburg</h3>
-                <span className="project-date">
-                  September 9th - September 11th
-                </span>
-                <span className="project-category">Frontend</span>
+                <ul className="project-tags">
+                  <li className="project-tag">React</li>
+                  <li className="project-tag">Knex.js</li>
+                  <li className="project-tag">Express</li>
+                  <li className="project-tag">Jira</li>
+                  <li className="project-tag">Sass</li>
+                </ul>
+                <p className="project-date">
+                  A mock YouTube single-page application (SPA) for streaming and
+                  uploading videos, built as a responsive app prototype using
+                  static function components and integrating with a backend API
+                  under development.
+                </p>
               </div>
             </li>
           </ul>
