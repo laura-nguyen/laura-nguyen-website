@@ -1,67 +1,43 @@
 import "./Contact.scss";
-import { useForm, ValidationError } from "@formspree/react";
+import { NavLink } from "react-router-dom";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
+import { ImMail } from "react-icons/im";
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("xanwqyzv");
-
+  const currentYear = new Date().getFullYear();
   return (
     <div className="contact-content">
       <div>
         <h2>Get in touch.</h2>
-        <p>Fill out the form below and I'll get back to you shortly.</p>
-        <ul className="contact-social-links">
-          <li>
-            <a href="https://www.linkedin.com/in/laura-nguyen/" target="_blank">
-              <i className="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
+
+        <a
+          className="contact__email"
+          href="ma&#105;lto&#58;%68&#37;65%6Cl&#111;%40l&#37;61u%72ang&#117;%79en&#46;&#109;e"
+        >
+          h&#101;llo&#64;&#108;a&#117;ra&#110;guyen&#46;me
+        </a>
       </div>
 
-      {state.succeeded ? (
-        <p>Thanks for your message!</p>
-      ) : (
-        <form onSubmit={handleSubmit} className="form">
-          <div className="form-field">
-            <label htmlFor="email">Email Address</label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-              className="full-width"
-            />
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
-            />
-          </div>
-          <div className="form-field">
-            <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Your Message"
-              required
-              className="full-width"
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
-          </div>
-          <button
-            type="submit"
-            disabled={state.submitting}
-            className="full-width btn--primary"
+      <div className="footer__right">
+        <div className="about__socials footer__socials">
+          <NavLink
+            to="https://www.linkedin.com/in/laura-nguyen/"
+            target="_blank"
           >
-            Submit
-          </button>
-        </form>
-      )}
+            <FaLinkedin />
+          </NavLink>
+
+          <NavLink to="https://github.com/lauranguyen" target="_blank">
+            <FaGithub />
+          </NavLink>
+          <NavLink to="mailto:hello@lauranguyen.me" target="_blank">
+            <ImMail />
+          </NavLink>
+        </div>
+        <h5>Want to work together, let's chat or just say hi.</h5>
+        <span>© Copyright {currentYear} made by yours truly.</span>
+      </div>
     </div>
   );
 };

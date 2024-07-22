@@ -31,6 +31,10 @@
   }
 }
 
+.contact {
+  max-width: none;
+}
+
 .main {
   //   z-index: -10000;
 
@@ -49,10 +53,14 @@
   &__title {
     font-size: 2rem;
     margin-bottom: 0;
+    max-width: 70rem;
     @include tablet {
       font-size: 3rem;
       margin-bottom: 1.5rem;
     }
+  }
+
+  @include desktop {
   }
 }
 

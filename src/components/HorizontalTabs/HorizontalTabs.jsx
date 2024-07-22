@@ -76,7 +76,7 @@ const HorizontalTabs = () => {
       <main className="main-with-aside">
         <div className="flow">
           <div className="filter-container">
-            <h1>Skills</h1>
+            <h2>Skills</h2>
             <div className="horizontal-filter">
               Filter by:
               <div className="button-container">

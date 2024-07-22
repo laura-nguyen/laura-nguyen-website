@@ -8,6 +8,7 @@
   justify-content: space-between;
   @include tablet {
     flex-direction: row;
+    align-items: end;
   }
 }
 
@@ -25,4 +26,21 @@
   @include tablet {
     gap: 0.5rem;
   }
+}
+
+.contact__email {
+  font-size: clamp(1.5rem, 1vw, 2rem);
+  @include tablet {
+    font-size: 2rem;
+  }
+}
+
+.footer__socials {
+  margin-bottom: 1rem;
+}
+
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }

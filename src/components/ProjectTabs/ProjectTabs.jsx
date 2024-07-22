@@ -1,6 +1,6 @@
 import "./ProjectTabs.scss";
 import { useEffect } from "react";
-import pho from "./../../assets/images/pho.jpg";
+
 import yogainstructCover from "./../../assets/gifs/yogainstruct.gif";
 import { HiOutlineCodeBracket } from "react-icons/hi2";
 import { HiOutlineExternalLink } from "react-icons/hi";

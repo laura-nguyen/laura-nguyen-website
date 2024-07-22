@@ -1,6 +1,5 @@
 import "./About.scss";
 import lauraPic from "./../../assets/images/laura.jpg";
-import { FaBeer } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
@@ -13,10 +12,12 @@ const About = () => {
         <h2>About</h2>
 
         <p>
-          Welcome to my small corner on the internet. Worked in growth marketing
-          for startups. Currently looking for opportunities to further grow my
-          skills. You can find me me at the golf course or trying different food
-          dishes.
+          Welcome to my small corner of the internet. With 3+ years of
+          experience in growth marketing for startups and a recent graduate of
+          BrainStation's Software Engineering bootcamp, I'm currently seeking
+          opportunities to further grow my skills and connect users one pixel at
+          a time. I like all things web and enjoy spending my free time on the
+          golf course or trying different food dishes.
         </p>
         {/* <ul className="about__list">
           <li>TypeScript</li>

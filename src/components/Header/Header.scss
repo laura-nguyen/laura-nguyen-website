@@ -8,12 +8,16 @@
   justify-content: space-between;
   align-items: center;
   font-size: 0.75rem;
-  position: fixed;
+
   width: 100%;
   top: 0;
   left: 0;
   transition: 0.6s;
   z-index: 100000;
+
+  @include mobile {
+    position: fixed;
+  }
 
   @include tablet {
     font-size: 1.25rem;
@@ -33,6 +37,7 @@
     align-items: center;
     gap: 0.5rem;
     font-size: 1.25rem;
+    width: 2.5rem;
     @include tablet {
       padding: 1rem 0;
     }
@@ -42,7 +47,7 @@
     }
 
     &-icon {
-      width: 2rem;
+      width: 4rem;
     }
   }
 }

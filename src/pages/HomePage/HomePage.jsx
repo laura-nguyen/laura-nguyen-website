@@ -47,9 +47,9 @@ const HomePage = () => {
         <ProjectTabs />
       </section>
       <ScrollingText />
-      <section className="contact">
+      <footer className="contact">
         <Contact />
-      </section>
+      </footer>
     </>
   );
 };
