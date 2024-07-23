@@ -8,11 +8,11 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { HiMiniArrowLongRight } from "react-icons/hi2";
 // import ReactCurvedText from "react-curved-text";
 import ScrollingText from "../../components/ScrollingText/ScrollingText";
-import ScrollingTextHeader from "../../components/ScrollingTextHeader/ScrollingTextHeader";
+
 const HomePage = () => {
   return (
     <>
-      <main className="main">
+      <main className="main" id="main">
         <div className="hero">
           <h1 className="main__title">
             Hey, I'm Laura, a growth marketer & software developer from Toronto.
@@ -37,17 +37,17 @@ const HomePage = () => {
           <CircleText />
         </div> */}
       </main>
-      <section className="about">
+      <section className="about" id="about">
         <About />
       </section>
-      <section className="skills">
+      <section className="skills" id="skills">
         <HorizontalTabs />
       </section>
-      <section className="projects">
+      <section className="projects" id="projects">
         <ProjectTabs />
       </section>
       <ScrollingText />
-      <footer className="contact">
+      <footer className="contact" id="contact">
         <Contact />
       </footer>
     </>

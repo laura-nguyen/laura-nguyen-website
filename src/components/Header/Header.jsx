@@ -1,7 +1,4 @@
 import "./Header.scss";
-import lotusLogo from "./../../assets/icons/logo-lotus.png";
-import logo from "./../../assets/icons/logo.svg";
-import { NavLink } from "react-router-dom";
 import DarkMode from "../DarkMode/DarkMode";
 
 const Header = () => {
@@ -16,7 +13,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <NavLink to="/" className="header__logo">
+      <a href="#main" className="header__logo">
         <svg
           version="1.0"
           xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +46,7 @@ const Header = () => {
             />
           </g>
         </svg>
-      </NavLink>
+      </a>
       <nav>
         <input type="checkbox" id="sidebar-active" />
         <label htmlFor="sidebar-active" className="open-sidebar-button">
@@ -79,27 +76,27 @@ const Header = () => {
 
           <div className="nav__links">
             <div className="nav__links-main">
-              <NavLink
-                to="/"
+              <a
+                href="#about"
                 className="nav__link--non-button"
                 onClick={handleNavLinkClick}
               >
                 ABOUT
-              </NavLink>
-              <NavLink
-                to="/"
+              </a>
+              <a
+                href="#skills"
                 className="nav__link--non-button"
                 onClick={handleNavLinkClick}
               >
                 SKILLS
-              </NavLink>
-              <NavLink
-                to="/"
+              </a>
+              <a
+                href="#projects"
                 className="nav__link--non-button"
                 onClick={handleNavLinkClick}
               >
                 PROJECTS
-              </NavLink>
+              </a>
 
               {/* <NavLink
                 to="/"
@@ -109,13 +106,13 @@ const Header = () => {
                 ETC.
               </NavLink> */}
 
-              <NavLink
-                to="/"
+              <a
+                href="#contact"
                 className="nav__link--non-button"
                 onClick={handleNavLinkClick}
               >
                 CONTACT
-              </NavLink>
+              </a>
 
               {/* <div className="nav__link-wrapper--cta">
                 <NavLink to="/">
