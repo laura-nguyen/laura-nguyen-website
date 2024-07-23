@@ -8,7 +8,7 @@ const ScrollingText = () => {
         available for new projects & opportunities
       </p>
       <p className="scrolling-text">site made by yours truly</p>
-      <p className="scrolling-text">your next marketer and developer</p>
+      <p className="scrolling-text">your next hire</p>
       <p className="scrolling-text">let's get in touch</p>
       <p className="scrolling-text">thanks for visiting my site</p>
     </Marquee>

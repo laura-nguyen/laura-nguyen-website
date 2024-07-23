@@ -141,3 +141,8 @@ button {
     transition: 0.3s;
   }
 }
+
+button:focus,
+input:focus {
+  outline: none;
+}

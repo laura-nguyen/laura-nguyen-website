@@ -7,7 +7,7 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 import { NavLink, Link } from "react-router-dom";
 import bandsite from "./../../assets/images/bandsite.png";
 import brainflix from "./../../assets/gifs/brainflix.gif";
-import instock from "./../../assets/gifs/instock.gif";
+import instock from "./../../assets/images/instock.png";
 
 const ProjectTabs = () => {
   useEffect(() => {
