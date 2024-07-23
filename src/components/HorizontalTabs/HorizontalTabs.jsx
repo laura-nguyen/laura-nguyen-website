@@ -199,7 +199,7 @@ const HorizontalTabs = () => {
 
             <li className="skill" skill-category="growth">
               <div className="skill-details">
-                <h3 className="skill-name">Websie Optimization</h3>
+                <h3 className="skill-name">Website Optimization</h3>
                 <p>
                   Expert in strategizing and implementing web design best
                   practices. Adept at full funnel optimization and conducting

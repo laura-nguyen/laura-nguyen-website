@@ -25,7 +25,8 @@
 
 .about,
 .skills,
-.projects {
+.projects,
+.contact {
   @include desktop {
     margin-bottom: 5rem;
   }

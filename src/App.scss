@@ -10,6 +10,7 @@
   box-sizing: border-box;
   font-family: "Plus Jakarta Sans", sans-serif;
   line-height: 1.5;
+  overflow-wrap: break-word;
 }
 
 body {
@@ -26,6 +27,11 @@ body {
 a {
   color: var(--link_color);
   font-weight: 600;
+
+  &:hover {
+    color: white;
+    transition: 0.3s;
+  }
 }
 
 .icon {
@@ -121,4 +127,9 @@ button {
   border: none;
 
   border-radius: 25px;
+
+  &:hover {
+    color: white;
+    transition: 0.3s;
+  }
 }
