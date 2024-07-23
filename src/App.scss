@@ -29,7 +29,7 @@ a {
   font-weight: 600;
 
   &:hover {
-    color: white;
+    color: var(--link_color_hover);
     transition: 0.3s;
   }
 }
@@ -129,7 +129,15 @@ button {
   border-radius: 25px;
 
   &:hover {
-    color: white;
+    color: var(--link_color_hover);
+    transition: 0.3s;
+  }
+}
+
+.filter-btn,
+.horizontal-filter-btn {
+  &:hover {
+    color: var(--filter_color_hover);
     transition: 0.3s;
   }
 }

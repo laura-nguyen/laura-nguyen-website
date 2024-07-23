@@ -260,14 +260,15 @@ const ProjectTabs = () => {
                   <li className="project-tag">React</li>
                   <li className="project-tag">Knex.js</li>
                   <li className="project-tag">Express</li>
+                  <li className="project-tag">mySQL</li>
                   <li className="project-tag">Jira</li>
                   <li className="project-tag">Sass</li>
                 </ul>
                 <p className="project-date">
-                  A mock YouTube single-page application (SPA) for streaming and
-                  uploading videos, built as a responsive app prototype using
-                  static function components and integrating with a backend API
-                  under development.
+                  Inventory Management System with real-time tracking and a
+                  user-friendly interface designed with Figma. Full-stack web
+                  app developed in a week by a team of four developers using
+                  Agile workflows.
                 </p>
               </div>
             </li>
@@ -276,7 +277,7 @@ const ProjectTabs = () => {
               <div className="project-details">
                 <div className="project__header">
                   <h3 className="project-name">
-                    Coming Soon, message me for details on the growth projects
+                    Coming soon. Message me for details on the growth projects
                     I've done 😊
                   </h3>
                 </div>

@@ -65,6 +65,9 @@
   @include tablet {
     align-items: flex-start;
   }
+  @include desktop {
+    width: auto;
+  }
 }
 
 .footer__right {
@@ -78,6 +81,7 @@
   @include tablet {
     gap: 2rem;
     align-items: flex-start;
+    width: auto;
   }
 
   @include desktop {

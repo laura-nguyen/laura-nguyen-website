@@ -13,6 +13,8 @@
 
   --body_color: black;
   --link_color: black;
+  --link_color_hover: rgba(0, 0, 0, 0.5);
+  --filter_color_hover: rgba(0, 0, 0, 0.5);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,4 +28,6 @@
   --body_background_gradient: #121212;
   --body_color: white;
   --link_color: #b4ff94;
+  --link_color_hover: white;
+  --filter_color_hover: #b4ff94;
 }
