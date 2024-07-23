@@ -3,7 +3,7 @@
 @import "./../../styles/partials/variables.scss";
 
 .header {
-  height: 7rem;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,8 +100,12 @@ nav a {
   }
   .open-sidebar-button,
   .close-sidebar-button {
+    display: flex;
+    align-items: center;
     padding: 1.5rem;
     display: block;
+    // background-color: var(--link_color);
+    // border-radius: 100%;
   }
   #sidebar-active:checked ~ .links-container {
     right: 0;

@@ -22,6 +22,9 @@ import {
   SiJira,
   SiHeroku,
   SiKnexdotjs,
+  SiGoogleanalytics,
+  SiSalesforce,
+  SiGoogleads,
 } from "react-icons/si";
 
 const HorizontalTabs = () => {
@@ -68,7 +71,7 @@ const HorizontalTabs = () => {
       });
     }
 
-    filterEvents("web-dev");
+    filterEvents("all");
   }, []);
 
   return (
@@ -78,10 +81,16 @@ const HorizontalTabs = () => {
           <div className="filter-container">
             <h2>Skills</h2>
             <div className="horizontal-filter">
-              Filter by:
+              {/* Filter by: */}
               <div className="button-container">
                 <button
                   className="horizontal-filter-btn active"
+                  skill-filter="all"
+                >
+                  All
+                </button>
+                <button
+                  className="horizontal-filter-btn"
                   skill-filter="web-dev"
                 >
                   Web Development
@@ -171,9 +180,7 @@ const HorizontalTabs = () => {
                   <li className="skill-detail-list__tag">
                     <SiGit /> Git
                   </li>
-                  <li className="skill-detail-list__tag">
-                    <SiVisualstudiocode /> VS Code
-                  </li>
+
                   <li className="skill-detail-list__tag">
                     <SiFigma /> Figma
                   </li>
@@ -192,71 +199,56 @@ const HorizontalTabs = () => {
 
             <li className="skill" skill-category="growth">
               <div className="skill-details">
-                <h3 className="skill-name">Web Design & Development</h3>
+                <h3 className="skill-name">Websie Optimization</h3>
+                <p>
+                  Expert in strategizing and implementing web design best
+                  practices. Adept at full funnel optimization and conducting
+                  A/B tests to enhance user experience and performance.
+                </p>
                 <ul className="skill-details-list">
-                  <li>
-                    Design and develop landing pages using HTML, CSS, and
-                    JavaScript to maximize conversions and sign-ups.
-                  </li>
-                  <li>
-                    Analyze the full funnel to optimize the entire website
-                    journey for higher conversions.
-                  </li>
-                  <li>
-                    Generate and implement A/B test ideas to continuously
-                    improve performance.
-                  </li>
+                  <li className="skill-detail-list__tag">Google Analytics</li>
+
+                  <li className="skill-detail-list__tag">Figma</li>
+                  <li className="skill-detail-list__tag">Hotjar</li>
+                  <li className="skill-detail-list__tag">VWO</li>
                 </ul>
               </div>
             </li>
 
             <li className="skill" skill-category="growth">
               <div className="skill-details">
-                <h3 className="skill-name">Email Marketing & SMS</h3>
+                <h3 className="skill-name">Email Marketing & CRM</h3>
+                <p>
+                  Proven track record in managing and executing personalized
+                  email and SMS campaigns. Skilled in campaign analytics and
+                  advanced segmentation to boost engagement and conversion
+                  rates.
+                </p>
                 <ul className="skill-details-list">
-                  <li>
-                    Create and manage effective, personalized email and SMS
-                    campaigns to enhance the customer lifecycle journey.
-                  </li>
-                  <li>
-                    Analyze campaign metrics to generate actionable insights and
-                    ideas for improvement.
-                  </li>
-
-                  <li>
-                    Implement advanced segmentation and targeting strategies to
-                    ensure messages reach the right audience at the right time.
-                  </li>
+                  <li className="skill-detail-list__tag">Salesforce</li>
+                  <li className="skill-detail-list__tag">Klaviyo</li>
+                  <li className="skill-detail-list__tag">Customer.io</li>
                 </ul>
               </div>
             </li>
 
             <li className="skill" skill-category="growth">
               <div className="skill-details">
-                <h3 className="skill-name">
-                  Marketing Analytics & Integration
-                </h3>
+                <h3 className="skill-name">Marketing Analytics</h3>
+                <p>
+                  Proficient in providing comprehensive funnel analytics for
+                  marketing and drawing insights and recommendations.
+                  Experienced in seamless integration with e-commerce platforms
+                  and creating insightful dashboards.
+                </p>
                 <ul className="skill-details-list">
-                  <li>
-                    Provide comprehensive funnel analytics and actionable
-                    recommendations to inform strategic decisions.
-                  </li>
-                  <li>
-                    Utilize tools like Google Analytics 4, Hotjar, and SEMRush
-                    to deliver in-depth insights into marketing performance.
-                  </li>
-                  <li>
-                    Handle pixel and tag installation via Google Tag Manager for
-                    accurate tracking and data collection.
-                  </li>
-                  <li>
-                    Seamlessly integrate marketing efforts with e-commerce
-                    platforms.
-                  </li>
-                  <li>
-                    Develop dashboards in Tableau, Looker, Sigma, and Mixpanel
-                    to visualize data and support data-driven decision-making.
-                  </li>
+                  <li className="skill-detail-list__tag">Google Analytics</li>
+                  <li className="skill-detail-list__tag">Tableau</li>
+
+                  <li className="skill-detail-list__tag">Looker</li>
+                  <li className="skill-detail-list__tag">Google Tag Manager</li>
+                  <li className="skill-detail-list__tag">Looker Studio</li>
+                  <li className="skill-detail-list__tag">Mixpanel</li>
                 </ul>
               </div>
             </li>
@@ -264,19 +256,16 @@ const HorizontalTabs = () => {
             <li className="skill" skill-category="growth">
               <div className="skill-details">
                 <h3 className="skill-name">SEO & Paid Ads</h3>
+                <p>
+                  Specialist in conducting thorough keyword research and
+                  optimizing campaigns for Facebook and Google Ads. Expertise in
+                  creating custom audiences and implementing retargeting tactics
+                  to maximize ROI and ad performance.
+                </p>
                 <ul className="skill-details-list">
-                  <li>
-                    Conduct thorough keyword research to improve organic search
-                    visibility and SEO performance.
-                  </li>
-                  <li>
-                    Manage and optimize daily campaigns for Facebook, Instagram,
-                    LinkedIn, and Google Ads to maximize ROI.
-                  </li>
-                  <li>
-                    Create custom audiences and implement retargeting tactics to
-                    enhance ad performance and drive conversions.
-                  </li>
+                  <li className="skill-detail-list__tag">Google Ads</li>
+                  <li className="skill-detail-list__tag">Facebook Ads</li>
+                  <li className="skill-detail-list__tag">SEMRush</li>
                 </ul>
               </div>
             </li>

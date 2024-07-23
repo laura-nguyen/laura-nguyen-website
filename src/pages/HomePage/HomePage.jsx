@@ -8,6 +8,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { HiMiniArrowLongRight } from "react-icons/hi2";
 // import ReactCurvedText from "react-curved-text";
 import ScrollingText from "../../components/ScrollingText/ScrollingText";
+import ScrollingTextHeader from "../../components/ScrollingTextHeader/ScrollingTextHeader";
 const HomePage = () => {
   return (
     <>
