@@ -1,9 +1,10 @@
 import "./About.scss";
 import lauraPic from "./../../assets/images/laura.jpg";
-import { FaLinkedin } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
-import { ImMail } from "react-icons/im";
+import { LuMail } from "react-icons/lu";
+import { FaXTwitter } from "react-icons/fa6";
 
 const About = () => {
   return (
@@ -32,14 +33,27 @@ const About = () => {
             to="https://www.linkedin.com/in/laura-nguyen/"
             target="_blank"
           >
-            <FaLinkedin />
+            <div className="about__socials-circle">
+              <FaLinkedinIn />
+            </div>
           </NavLink>
 
           <NavLink to="https://github.com/lauranguyen" target="_blank">
-            <FaGithub />
+            <div className="about__socials-circle">
+              <FaGithub />
+            </div>
           </NavLink>
+
           <NavLink to="mailto:hello@lauranguyen.me" target="_blank">
-            <ImMail />
+            <div className="about__socials-circle">
+              <LuMail />
+            </div>
+          </NavLink>
+
+          <NavLink to="https://x.com/lauriananguyen/likes" target="_blank">
+            <div className="about__socials-circle">
+              <FaXTwitter />
+            </div>
           </NavLink>
         </div>
       </div>

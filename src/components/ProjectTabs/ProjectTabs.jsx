@@ -21,18 +21,33 @@ const ProjectTabs = () => {
       project.style.viewTransitionName = `proj-${++projectIndex}`;
     });
 
+    const applyFilter = (filter) => {
+      projects.forEach((project) => {
+        let eventCategory = project.getAttribute("data-category");
+        if (filter === "all" && project.classList.contains("coming-soon")) {
+          project.setAttribute("hidden", "");
+        } else if (filter === "all" || filter === eventCategory) {
+          project.removeAttribute("hidden");
+        } else {
+          project.setAttribute("hidden", "");
+        }
+      });
+    };
+
+    applyFilter("all");
+
     filterButtons.forEach((button) => {
       button.addEventListener("click", (e) => {
         let confCategory = e.target.getAttribute("data-filter");
 
         if (!document.startViewTransition) {
           updateActiveButton(e.target);
-          filterEvents(confCategory);
+          applyFilter(confCategory);
         }
 
         document.startViewTransition(() => {
           updateActiveButton(e.target);
-          filterEvents(confCategory);
+          applyFilter(confCategory);
         });
       });
     });
@@ -40,17 +55,6 @@ const ProjectTabs = () => {
     function updateActiveButton(newButton) {
       filterList.querySelector(".active").classList.remove("active");
       newButton.classList.add("active");
-    }
-
-    function filterEvents(filter) {
-      projects.forEach((project) => {
-        let eventCategory = project.getAttribute("data-category");
-        if (filter === "all" || filter === eventCategory) {
-          project.removeAttribute("hidden");
-        } else {
-          project.setAttribute("hidden", "");
-        }
-      });
     }
   }, []);
 
@@ -265,6 +269,17 @@ const ProjectTabs = () => {
                   static function components and integrating with a backend API
                   under development.
                 </p>
+              </div>
+            </li>
+
+            <li className="project coming-soon" data-category="growth">
+              <div className="project-details">
+                <div className="project__header">
+                  <h3 className="project-name">
+                    Coming Soon, message me for details on the growth projects
+                    I've done 😊
+                  </h3>
+                </div>
               </div>
             </li>
           </ul>

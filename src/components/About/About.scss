@@ -31,10 +31,11 @@
   display: flex;
 
   justify-content: space-between;
+  font-size: 1.25rem;
   width: 50%;
-  @include tablet {
-    font-size: 2rem;
-  }
+  //   @include tablet {
+  //     font-size: 1.5rem;
+  //   }
 }
 
 .about__list {
@@ -51,4 +52,15 @@
   @include tablet {
     order: 1;
   }
+}
+
+.about__socials-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   background-color: black;
+  border: 1px solid var(--body_color);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
 }

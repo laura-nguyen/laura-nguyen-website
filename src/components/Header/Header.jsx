@@ -20,8 +20,8 @@ const Header = () => {
         <svg
           version="1.0"
           xmlns="http://www.w3.org/2000/svg"
-          width="467.000000pt"
-          height="467.000000pt"
+          width="2rem"
+          height="2rem"
           viewBox="0 0 467.000000 467.000000"
           preserveAspectRatio="xMidYMid meet"
         >

@@ -14,8 +14,7 @@ const HomePage = () => {
       <main className="main">
         <div className="hero">
           <h1 className="main__title">
-            Hey, I'm Laura, I'm a growth marketer & software developer from
-            Toronto.
+            Hey, I'm Laura, a growth marketer & software developer from Toronto.
             {/* I enjoy finding human touch in a pixelated
             world. */}
           </h1>

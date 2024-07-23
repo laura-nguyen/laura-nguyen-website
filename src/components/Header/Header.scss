@@ -3,7 +3,7 @@
 @import "./../../styles/partials/variables.scss";
 
 .header {
-  height: 5rem;
+  height: 7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,11 +121,12 @@ nav a {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  gap: 3rem;
+  gap: 7rem;
 
   @include tablet {
     flex-direction: row;
     align-items: center;
+    gap: 3rem;
     // gap: calc(45px + 20%); // need to adjust
   }
 }

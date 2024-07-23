@@ -6,9 +6,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
+
   @include tablet {
     flex-direction: row;
-    align-items: end;
+    align-items: baseline;
+    gap: 2rem;
+  }
+
+  @include desktop {
   }
 }
 
@@ -37,10 +43,36 @@
 
 .footer__socials {
   margin-bottom: 1rem;
+  width: 100% !important;
+  @include desktop {
+    gap: 2rem;
+    width: 50% !important;
+  }
 }
 
 .footer__right {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+
+  @include tablet {
+    gap: 2rem;
+  }
+}
+
+.contact__copyright {
+  &--mobile {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @include tablet {
+      display: contents;
+    }
+  }
 }

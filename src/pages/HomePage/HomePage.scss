@@ -38,12 +38,12 @@
 .main {
   //   z-index: -10000;
 
-  height: 80vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
 
   @include tablet {
-    height: 90vh;
+    height: 75vh;
   }
 
   //   display: flex;
