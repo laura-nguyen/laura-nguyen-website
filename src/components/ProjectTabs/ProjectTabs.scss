@@ -57,15 +57,14 @@
 
 .project-list {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
 
   @include tablet {
-    gap: 2rem;
+    gap: 2.5rem;
   }
 
   @include desktop {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
   }
 }
 

@@ -46,7 +46,7 @@ const HomePage = () => {
       <section className="projects" id="projects">
         <ProjectTabs />
       </section>
-      <ScrollingText />
+
       <footer className="contact" id="contact">
         <Contact />
       </footer>

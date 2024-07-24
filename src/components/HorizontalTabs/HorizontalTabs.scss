@@ -33,9 +33,9 @@
   }
 
   .active {
-    text-decoration: underline 3px;
-    text-decoration-color: var(--link_color);
-    text-underline-offset: 7px;
+    text-decoration: underline 3px !important;
+    text-decoration-color: var(--link_color) !important;
+    text-underline-offset: 7px !important;
   }
 }
 
@@ -43,6 +43,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin: 1.5rem 0;
 }
 
 .skill-detail-list__tag {

@@ -31,7 +31,7 @@ const Contact = () => {
             </div>
           </NavLink>
 
-          <NavLink to="https://github.com/lauranguyen" target="_blank">
+          <NavLink to="https://github.com/laura-nguyen" target="_blank">
             <div className="about__socials-circle">
               <FaGithub />
             </div>
@@ -43,7 +43,7 @@ const Contact = () => {
             </div>
           </NavLink>
 
-          <NavLink to="https://x.com/lauriananguyen/likes" target="_blank">
+          <NavLink to="https://x.com/lauriananguyen/" target="_blank">
             <div className="about__socials-circle">
               <FaXTwitter />
             </div>
