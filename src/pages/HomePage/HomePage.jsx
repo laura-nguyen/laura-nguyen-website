@@ -4,10 +4,8 @@ import HorizontalTabs from "../../components/HorizontalTabs/HorizontalTabs";
 import CircleText from "../../components/CircleText/CircleText";
 import Contact from "../../components/Contact/Contact";
 import About from "../../components/About/About";
-import { IoIosArrowRoundForward } from "react-icons/io";
 import { HiMiniArrowLongRight } from "react-icons/hi2";
-// import ReactCurvedText from "react-curved-text";
-import ScrollingText from "../../components/ScrollingText/ScrollingText";
+import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -26,12 +24,12 @@ const HomePage = () => {
           </p> */}
           {/* <p>Finding human touch in a pixelated world.</p> */}
 
-          <button className="main__btn">
+          <a href="#projects" className="main__btn">
             See Projects
             <div className="arrow-container">
               <HiMiniArrowLongRight className="arrow" />
             </div>
-          </button>
+          </a>
         </div>
         {/* <div className="main__circle">
           <CircleText />
